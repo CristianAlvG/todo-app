@@ -1,5 +1,10 @@
 import functions
 import FreeSimpleGUI as sg
+import os
+
+if not os.path.exists('todoList.txt'):
+    with open("todoList.txt", 'w') as file:
+        pass
 
 #Widgets
 label = sg.Text("Type in a to-do")
